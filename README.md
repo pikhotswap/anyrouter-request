@@ -5,7 +5,8 @@
 ## 启动
 
 - macOS：双击「双击启动监测面板.command」（首次如被拦截，右键 → 打开一次），会自动启动服务并打开浏览器。
-- 其它系统 / 手动启动：`python3 relay_monitor.py`，然后浏览器访问 http://localhost:8765 （换端口：`PORT=9000 python3 relay_monitor.py`）。
+- Windows：双击「双击启动监测面板.bat」。需先安装 Python 3（python.org 或 Microsoft Store），脚本会自动检测。
+- 其它系统 / 手动启动：`python3 relay_monitor.py`（Windows 为 `python relay_monitor.py`），然后浏览器访问 http://localhost:8765 （换端口：`PORT=9000 python3 relay_monitor.py`）。
 
 仅需系统自带 Python 3（无需安装任何第三方库）。
 
@@ -36,3 +37,4 @@
 
 - `relay_monitor.py` — 主程序（服务端 + 内嵌网页，单文件，无第三方依赖）
 - `双击启动监测面板.command` — macOS 双击启动器
+- `双击启动监测面板.bat` — Windows 双击启动器
